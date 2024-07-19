@@ -1,6 +1,7 @@
 import _ from 'underscore';
 import {crearDeck, pedirCarta, valorCarta} from './usecases';
 
+const miModulo = (() => {
    let deck = [];
    const tipos = ['C', 'D', 'H', 'S'],
     especiales = ['A', 'J', 'Q', 'K'];
@@ -110,5 +111,8 @@ import {crearDeck, pedirCarta, valorCarta} from './usecases';
        inicializarJuego();
    })
 
+   return {
+        nuevoJuego: inicializarJuego()
+   }
 
-
+})();
