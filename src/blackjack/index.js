@@ -2,7 +2,7 @@ import _ from 'underscore';
 import {crearDeck, pedirCarta, valorCarta} from './usecases';
 
 const miModulo = (() => {
-    'strict only'
+    'use strict';
 
    let deck = [];
    const tipos = ['C', 'D', 'H', 'S'],
